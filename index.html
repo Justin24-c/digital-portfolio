@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <img class="profile_IMG" src="./assets/image/home_Image.jpeg" alt="">
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- LinkedIn -->
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a> <!-- GitHub -->
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Instagram -->
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp -->
+        </div>
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm a passionate frontend developer eager to create amazing projects.</p>
+            <a href="./assets/image/justin resume2.pdf" class="btn" download>Resume</a>
+        </div>
+    </section>
+
+
+  <!-- About Section -->
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="./assets/image/profile.jpeg" alt="Your Name">
+            <div class="circle-text">
+                <svg viewBox="0 0 200 200">
+                    <defs>
+                        <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"></path>
+                    </defs>
+                    <text>
+                        <textPath xlink:href="#circlePath" startOffset="50%">
+                            I am The Frontend Developer • I am The Frontend Developer •
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm a passionate frontend developer with a love for crafting beautiful and responsive web experiences. With a keen eye for design and a strong foundation in coding, I strive to create seamless and user-friendly applications.</p>
+            <p>I specialize in modern web technologies such as HTML, CSS, JavaScript, and frameworks like React. My goal is to bring ideas to life with clean and efficient code.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="skills-content">
+        <h2>My Skills</h2>
+        <p>
+            I specialize in frontend development, crafting interactive and responsive websites using modern technologies.
+            Below are my key skill sets:
+        </p>
+
+        <div class="skills-container">
+            <div class="skill">
+                <div class="text">HTML</div>
+                <div class="circle" data-percent="90">
+                    <span class="percentage">90%</span>
+                    <svg>
+                        <circle cx="40" cy="40" r="35"></circle>
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="text">CSS</div>
+                <div class="circle" data-percent="85">
+                    <span class="percentage">85%</span>
+                    <svg>
+                        <circle cx="40" cy="40" r="35"></circle>
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="text">JavaScript</div>
+                <div class="circle" data-percent="75">
+                    <span class="percentage">75%</span>
+                    <svg>
+                        <circle cx="40" cy="40" r="35"></circle>
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="projects-content">
+        <h2>My Projects</h2>
+        <p>
+            Here are some of my recent projects showcasing my skills in frontend development.
+        </p>
+
+        <!-- Projects Container (Now appears immediately after the text) -->
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="./assets/image/portfolio.webp" alt="Project 1">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A fully responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn code-btn">View Code</a>
+                        <a href="#" class="btn live-btn">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="./assets/image/weather.webp" alt="Project 2">
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A real-time weather application using APIs to fetch live weather data.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn code-btn">View Code</a>
+                        <a href="#" class="btn live-btn">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="./assets/image/to_do_list.webp" alt="Project 3">
+                <div class="project-info">
+                    <h3>To-Do List App</h3>
+                    <p>A task management app with add, edit, and delete functionalities.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn code-btn">View Code</a>
+                        <a href="#" class="btn live-btn">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact  -->
+<section id="contact">
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via this form.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Justin. All Rights Reserved.</p>
+        <div class="footer-social">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="./assets/Js/script.js"></script>
+</body>
+</html>
